@@ -119,14 +119,42 @@
             <div class="header">
                 <h2 class="title">Markup Breakdown</h2>
             </div>
+            <div class="content html-elements">
+                <h2>Skeleton</h2>
+                <p class="desc">
+                   Every webpage you create should have these elements. These elements are the foundation that you will build on.
+                </p>
+                <ul>
+                    <li><p class="desc"><strong> &lt;!DOCTYPE html> :</strong> Declaration must be the very first thing in your HTML document, before the &lt;html> tag</p></li>
+                    <li><p class="desc"> <strong>&lt;html> : </strong> Defines the root of an HTML document </p></li>
+                    <li><p class="desc"><strong> &lt;head> : </strong> Defines information about the document </p></li>
+                    <li><p class="desc"><strong> &lt;body> : </strong> Represents the content of an HTML document </p></li>
+                </ul>
+  <pre class="prettyprint prettyprinted">
+     &lt;!DOCTYPE html>
+      &lt;html>
+        &lt;head>
 
-            <div class="content">
-                <h3>Containers</h3>
+             information about your website,css files and script files usually go here
+
+        &lt;/head>
+        &lt;body>
+
+            HTML Markup will go inside the body tag.
+
+        &lt;/body>
+    &lt;/html>
+</pre>
+            </div>
+
+            <div class="content html-elements">
+                <h2>Containers</h2>
                 <p class="desc">
                    The content on your page needs to be organized. The most common way to organize your content is with container elements.
                     Here is a list of some of the most used elements to layout your webpages.
                 </p>
                 <ul>
+                    <li><p class="desc"><strong> &lt;main> :</strong> Specifies the main content of a document </p></li>
                     <li><p class="desc"><strong> &lt;div> :</strong> Defines a division or a section </p></li>
                     <li><p class="desc"> <strong>&lt;section> : </strong> defines sections in a document, such as chapters, headers, footers, or any other sections of the document</p></li>
                     <li><p class="desc"><strong> &lt;header> : </strong> Defines a header for a document or a section </p></li>
@@ -138,10 +166,12 @@
                     <li><p class="desc"><strong> &lt;summary> : </strong> Defines a heading for the &lt;details> element</p></li>
                 </ul>
                 <div>
-                <img class="layout-example" src="img/layout-example.jpg" alt="html layout example image">
-
+                <img class="layout-example" src="img/html5-layout-example.jpg" alt="html layout example image">
                 </div>
             </div>
+            <footer class="more-tags-link">
+            <a class="bold-in-paragraph " onclick="window.open('http://w3schools.com/tags/');">More tags found here </a>
+            </footer>
         </section>
 
     </div>

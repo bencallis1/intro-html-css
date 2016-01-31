@@ -321,3 +321,13 @@ strong {
 .layout-example {
     width:100%;
 }
+
+.html-elements {
+    padding-left: 10px;
+}
+
+.more-tags-link{
+    width: 100%;
+    padding:40px;
+    text-align: center;
+}
