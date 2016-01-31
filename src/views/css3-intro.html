@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Learn CSS3 </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/component.css" />
+    <script src="../js/itstime.js"></script>
+</head>
+
+<body cz-shortcut-listen="true">
+<div class="os-phrases" id="os-phrases">
+    <h2>Websites are better</h2>
+    <h2>With</h2>
+    <h2>CSS</h2>
+    <h2>So Get Ready</h2>
+    <h2><a onclick="alert('heyyyyy')">click to enter</a></h2>
+
+
+</div>
+</div><!-- /container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/vendor/jquery.lettering.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+    })
+</script>
+</body>
+</html>
