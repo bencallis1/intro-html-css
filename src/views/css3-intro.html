@@ -102,15 +102,113 @@
                                 <div class="header">
                                     <h2 class="title">What is a Css Selector?</h2>
                                 </div>
-
                                 <div class="content">
                                     <p class="desc">
                                         Once you have some HTML markup you need to be able to tie the specific styles with specific elements. You can do this
                                         many different ways, I'll show you the most frequently used selectors.
                                     </p>
-                                    <a onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/How_CSS_works');"> Official explanation how css works found here</a>
-
                                 </div>
+                            </section>
+                            <section>
+                            <div class="header">
+                                <h2 class="title">The Class Selector</h2>
+                            </div>
+                            <div class="content">
+                                <p class="desc">
+                                    Use the class attribute in an element to assign the element to a named class. It is up to you what name you choose for the class.
+                                    Multiple elements in a document can have the same class value.
+                                </p>
+                                <p class="desc">
+                                    You would use this type of selector when you have a change that you would want to affect more than one element. I like to think of it in terms of a classroom full of people, if there
+                                    was a change I wanted to make that would affect them all "change all their shirts to the color red or give them all brown hair. I would use a class selector for this.
+                                </p>
+                            </div>
+                        </section>
+                            <section>
+                                <div class="header">
+                                    <h2 class="title">HTML Markup with a class attribute</h2>
+                                </div>
+                                <div class="content">
+                                    <p class="desc">
+                                        This is an example of HTML markup that has a class attribute.
+                                    </p>
+                                </div>
+ <pre class="prettyprint prettyprinted">
+    &lt;h1 class='people'> Some Text &lt;/h1>
+</pre>
+                            </section>
+                            <section>
+                                <div class="header">
+                                    <h2 class="title">The id Selector</h2>
+                                </div>
+                                <div class="content">
+                                    <p class="desc">
+                                        Use the id attribute in an element to assign an ID to the element. It is up to you what name you choose for the ID.
+                                        The ID name must be unique in the document.
+
+                                    </p>
+                                    <p class="desc">
+                                       You would use this type of selector if you wanted to make changes to only one HTML element. Think about your drivers license or passport, both of those
+                                        are unique to you. The same goes for code the id should be unique to only that specific element.
+                                    </p>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="header">
+                                    <h2 class="title">HTML Markup with a id attribute</h2>
+                                </div>
+                                <div class="content">
+                                    <p class="desc">
+                                        This is an example of HTML markup that has a id attribute.
+                                    </p>
+                                </div>
+ <pre class="prettyprint prettyprinted">
+    &lt;h1 id='people'> Some Text &lt;/h1>
+</pre>
+                            </section>
+                            <section>
+                                <div class="header">
+                                    <h2 class="title">Stylesheets vs inline styles</h2>
+                                </div>
+                                <div class="content">
+                                    <p class="desc">
+                                        The two primary ways of styling an HTML element. The first is inline-styles, and the other is using a stylesheet. Inline-styles are when you put your styles
+                                        on the HTML element, and a stylesheet is a separate file for your styles. I recommend always putting your styles in a separate file.
+                                    </p>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="header">
+                                    <h2 class="title">Inline Style</h2>
+                                </div>
+ <pre class="prettyprint prettyprinted">
+    &lt;h1 style='color:blue;font-size:12px;'> Some Text &lt;/h1>
+</pre>
+                            </section>
+                            <section>
+                                <div class="header">
+                                    <h2 class="title">Stylesheet</h2>
+                                </div>
+                                <div class="content">
+                                    <p class="desc">
+                                       Because the stylesheet it located in a separate file you need to tell the browser where to find it. You do this by including the location in the head
+                                        of the HTML Document that the stylesheet is associated with. You probably remember the HTML Skeleton from the earlier section. This time we will add
+                                        a css file to the head section
+                                    </p>
+                                </div>
+
+<pre class="prettyprint prettyprinted stylesheet-head">
+     &lt;!DOCTYPE html>
+      &lt;html>
+        &lt;head>
+             &lt;link rel="stylesheet" type="text/css" href="../css/people.css" />
+        &lt;/head>
+        &lt;body>
+            &lt;h1 class='people'> Class of People &lt;/h1>
+            &lt;h1 id='person'> Just one Person &lt;/h1>
+        &lt;/body>
+    &lt;/html>
+</pre>
                             </section>
                         </div>
                     </div>
@@ -152,9 +250,6 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 </div>
