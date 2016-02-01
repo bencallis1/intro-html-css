@@ -28,7 +28,8 @@ audio:not([controls]) {
 }
 
 a {
-    background-color: transparent
+    background-color: transparent;
+    cursor:pointer;
 }
 
 a:active,a:hover {
@@ -256,6 +257,7 @@ pre {
     font-weight: 300;
     padding: 15px;
     margin: 5px
+
 }
 
 ul {
@@ -267,7 +269,7 @@ ul {
 li,li * {
     line-height: 2.8rem;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400
 }
 
@@ -307,6 +309,10 @@ strong {
 
 .contact-info-ul {
     list-style: none;
+    font-size: 14px;
+}
+.contact-info-ul li {
+    cursor: pointer;
 }
 
 .bold-in-paragraph {
@@ -363,6 +369,9 @@ input {
     padding-left: 10px;
 }
 
+input :focus {
+    outline: none;
+}
 button {
     width: 25%;
     height: 100%;
@@ -374,7 +383,9 @@ button {
     border-radius: 0;
     padding:0;
 }
-
+button :focus {
+    outline: none;
+}
 .none {
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
