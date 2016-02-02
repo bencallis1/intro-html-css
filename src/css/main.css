@@ -96,7 +96,8 @@ hr {
 }
 
 pre {
-    overflow: auto
+    overflow: auto;
+    white-space: pre;
 }
 
 code,kbd,pre,samp {
@@ -107,20 +108,20 @@ code,kbd,pre,samp {
 button,input,optgroup,select,textarea {
     color: inherit;
     font: inherit;
-    margin: 0
+    margin: 0;
 }
 
 button {
-    overflow: visible
+    overflow: visible;
 }
 
 button,select {
-    text-transform: none
+    text-transform: none;
 }
 
 button,html input[type=button],input[type=reset],input[type=submit] {
     -webkit-appearance: button;
-    cursor: pointer
+    cursor: pointer;
 }
 
 button[disabled],html input[disabled] {
@@ -397,6 +398,7 @@ button :focus {
 #css-intro-main {
     display: none;
 }
+
 .show-css {
     display: block;
     -webkit-transition: all 1s ease-in-out;
@@ -409,4 +411,24 @@ button :focus {
 
 .stylesheet-head pre {
     white-space: pre;
+}
+
+.div-layout-example {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+.div-layout-example-1 {
+    width: 49%;
+    height: 400px;
+    background-color: grey;
+
+}
+
+.div-layout-example-2 {
+    width: 49%;
+    height: 400px;
+    background-color: blue;
+
 }

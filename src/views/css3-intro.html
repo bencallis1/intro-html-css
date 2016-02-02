@@ -4,28 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Learn CSS3 </title>
-    <meta name="description" content="">
+    <meta name="description" content="Intro to css lesson for Dev Mountain">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Dev Mountain Intro to Css" />
     <meta name="keywords" content="Css3, DevMountain, Learn to code, Ben Callis " />
     <meta name="author" content="Ben Callis" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/demo.css" />
     <link rel="stylesheet" type="text/css" href="../css/card.css" />
     <link rel="stylesheet" type="text/css" href="../css/pattern.css" />
-    <script src="../js/itstime.js"></script>
 </head>
 
 <body cz-shortcut-listen="true">
 <div class="container">
     <div class="content">
-        <!-- trianglify pattern container -->
         <div class="pattern pattern--hidden"></div>
-        <!-- cards -->
         <div class="wrapper">
             <div class="card">
                 <div class="card__container card__container--closed">
@@ -209,7 +204,25 @@
         &lt;/body>
     &lt;/html>
 </pre>
+                                <div class="content">
+                                    <p class="desc">
+                                        Now that the browser knows where to find the file containing your styles you can start to add them
+                                    </p>
+                                </div>
+<pre class="prettyprint prettyprinted stylesheet-head">
+   .people {
+        font-size: 12px;
+        color: blue;
+    }
+
+    #person {
+        font-size: 18px;
+        color: red;
+    }
+</pre>
                             </section>
+                            <a onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors');"> More selector Information found here </a>
+
                         </div>
                     </div>
                 </div>
@@ -228,24 +241,94 @@
                     <div class="card__content">
                         <i class="card__btn-close fa fa-times"></i>
                         <div class="card__caption">
-                            <h2 class="card__title">Layouts Yo!!</h2>
+                            <h2 class="card__title">Width, Height and Display</h2>
                             <p class="card__subtitle">How to line it up</p>
                         </div>
                         <div class="card__copy">
                             <div class="card__copy">
-                                <section id="ben-callis">
+                                <section id="layout">
                                     <div class="header">
-                                        <h2 class="title">Box Model</h2>
+                                        <h2 class="title">What is layout</h2>
                                     </div>
-
                                     <div class="content">
                                         <p class="desc">
-
+                                            Many things change the layout of a page. Everything from text alignment to the width of your containers. In the first section I'll review
+                                            how to change the layout of containers and the second half I'll explain how to change the layout of the things inside those containers.
                                         </p>
                                     </div>
                                 </section>
-                            </div>
+                                <section>
+                                    <div class="header">
+                                        <h2 class="title">Width and Height</h2>
+                                    </div>
+                                    <div class="content">
+                                        <p class="desc">
+                                           When specifying the width and the height of a element you can use several different methods
+                                        </p>
+                                        <div class="header">
+                                            <h2 class="title">px and %</h2>
+                                            </div>
+                                            <p class="desc">
+                                               The following example we have a div with the class main-container.
+                                            </p>
 
+<pre class="prettyprint prettyprinted stylesheet-head">
+     &lt;!DOCTYPE html>
+      &lt;html>
+        &lt;head>
+             &lt;link rel="stylesheet" type="text/css" href="../css/people.css" />
+        &lt;/head>
+        &lt;body>
+            &lt;div class='main-container>  &lt;/div>
+
+        &lt;/body>
+    &lt;/html>
+</pre>                                     <p class="desc">
+                                           We can add some style to adjust the layout
+                                        </p>
+<pre class="prettyprint prettyprinted stylesheet-head">
+    .main-container {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+    }
+</pre>
+                                            <p class="desc">
+                                               This would render into
+                                            </p>
+                                            <div class="div-layout-example"></div>
+                                                <p class="desc">
+                                                    What if we wanted to containers next to each other
+                                                </p>
+
+                                                <p class="desc">
+                                                     Add some style to adjust the layout
+                                                </p>
+<pre class="prettyprint prettyprinted stylesheet-head">
+    .main-container-1 {
+        width: 50%;
+        height: 400px;
+        background-color: grey;
+    }
+    .main-container-2 {
+        width: 50%;
+        height: 400px;
+        background-color: blue;
+    }
+</pre>
+                                                <p class="desc">
+                                                    This would render into
+                                                </p>
+                                                <div class="div-layout-example-1">  </div>
+                                                <div class="div-layout-example-2"> </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -260,5 +343,7 @@
 <script src="../js/vendors/cash.min.js"></script>
 <script src="../js/Card-circle.js"></script>
 <script src="../js/demo.js"></script>
+<script src="../js/itstime.js"></script>
+
 </body>
 </html>
