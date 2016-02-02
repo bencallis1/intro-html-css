@@ -419,6 +419,11 @@ button :focus {
     background-color: grey;
 }
 
+.div-layout-example-200px{
+    width: 200px;
+    height: 400px;
+    background-color: grey;
+}
 .div-layout-example-1 {
     width: 49%;
     height: 400px;
@@ -430,5 +435,21 @@ button :focus {
     width: 49%;
     height: 400px;
     background-color: blue;
+
+}
+
+.div-layout-example-1-left {
+    width: 49%;
+    height: 400px;
+    background-color: grey;
+    display: inline-block;
+
+}
+
+.div-layout-example-2-right {
+    width: 49%;
+    height: 400px;
+    background-color: blue;
+    display: inline-block;
 
 }

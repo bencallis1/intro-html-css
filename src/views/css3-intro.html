@@ -10,18 +10,17 @@
     <meta name="keywords" content="Css3, DevMountain, Learn to code, Ben Callis " />
     <meta name="author" content="Ben Callis" />
     <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/card.css" />
     <link rel="stylesheet" type="text/css" href="../css/pattern.css" />
 </head>
-
 <body cz-shortcut-listen="true">
 <div class="container">
     <div class="content">
         <div class="pattern pattern--hidden"></div>
         <div class="wrapper">
+
             <div class="card">
                 <div class="card__container card__container--closed">
                     <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
@@ -44,7 +43,6 @@
                                 <div class="header">
                                     <h2 class="title">Cascading Style Sheets (CSS)</h2>
                                 </div>
-
                                 <div class="content">
                                     <p class="desc">
                                         Css is the hot sauce on the html burrito. HTML is boring and plain but necessary for our content. Paired up correctly with some html
@@ -60,7 +58,6 @@
                                 <div class="header">
                                     <h2 class="title">How does it work?</h2>
                                 </div>
-
                                 <div class="content">
                                     <p class="desc">
                                         The browser converts the HTML and the CSS into the DOM (Document Object Model).
@@ -105,20 +102,20 @@
                                 </div>
                             </section>
                             <section>
-                            <div class="header">
-                                <h2 class="title">The Class Selector</h2>
-                            </div>
-                            <div class="content">
-                                <p class="desc">
-                                    Use the class attribute in an element to assign the element to a named class. It is up to you what name you choose for the class.
-                                    Multiple elements in a document can have the same class value.
-                                </p>
-                                <p class="desc">
-                                    You would use this type of selector when you have a change that you would want to affect more than one element. I like to think of it in terms of a classroom full of people, if there
-                                    was a change I wanted to make that would affect them all "change all their shirts to the color red or give them all brown hair. I would use a class selector for this.
-                                </p>
-                            </div>
-                        </section>
+                                <div class="header">
+                                    <h2 class="title">The Class Selector</h2>
+                                </div>
+                                <div class="content">
+                                    <p class="desc">
+                                        Use the class attribute in an element to assign the element to a named class. It is up to you what name you choose for the class.
+                                        Multiple elements in a document can have the same class value.
+                                    </p>
+                                    <p class="desc">
+                                        You would use this type of selector when you have a change that you would want to affect more than one element. I like to think of it in terms of a classroom full of people, if there
+                                        was a change I wanted to make that would affect them all "change all their shirts to the color red or give them all brown hair. I would use a class selector for this.
+                                    </p>
+                                </div>
+                            </section>
                             <section>
                                 <div class="header">
                                     <h2 class="title">HTML Markup with a class attribute</h2>
@@ -128,7 +125,7 @@
                                         This is an example of HTML markup that has a class attribute.
                                     </p>
                                 </div>
- <pre class="prettyprint prettyprinted">
+                              <pre class="prettyprint prettyprinted">
     &lt;h1 class='people'> Some Text &lt;/h1>
 </pre>
                             </section>
@@ -140,10 +137,9 @@
                                     <p class="desc">
                                         Use the id attribute in an element to assign an ID to the element. It is up to you what name you choose for the ID.
                                         The ID name must be unique in the document.
-
                                     </p>
                                     <p class="desc">
-                                       You would use this type of selector if you wanted to make changes to only one HTML element. Think about your drivers license or passport, both of those
+                                        You would use this type of selector if you wanted to make changes to only one HTML element. Think about your drivers license or passport, both of those
                                         are unique to you. The same goes for code the id should be unique to only that specific element.
                                     </p>
                                 </div>
@@ -157,7 +153,7 @@
                                         This is an example of HTML markup that has a id attribute.
                                     </p>
                                 </div>
- <pre class="prettyprint prettyprinted">
+                              <pre class="prettyprint prettyprinted">
     &lt;h1 id='people'> Some Text &lt;/h1>
 </pre>
                             </section>
@@ -176,7 +172,7 @@
                                 <div class="header">
                                     <h2 class="title">Inline Style</h2>
                                 </div>
- <pre class="prettyprint prettyprinted">
+                              <pre class="prettyprint prettyprinted">
     &lt;h1 style='color:blue;font-size:12px;'> Some Text &lt;/h1>
 </pre>
                             </section>
@@ -186,13 +182,12 @@
                                 </div>
                                 <div class="content">
                                     <p class="desc">
-                                       Because the stylesheet it located in a separate file you need to tell the browser where to find it. You do this by including the location in the head
+                                        Because the stylesheet it located in a separate file you need to tell the browser where to find it. You do this by including the location in the head
                                         of the HTML Document that the stylesheet is associated with. You probably remember the HTML Skeleton from the earlier section. This time we will add
                                         a css file to the head section
                                     </p>
                                 </div>
-
-<pre class="prettyprint prettyprinted stylesheet-head">
+                              <pre class="prettyprint prettyprinted stylesheet-head">
      &lt;!DOCTYPE html>
       &lt;html>
         &lt;head>
@@ -209,7 +204,7 @@
                                         Now that the browser knows where to find the file containing your styles you can start to add them
                                     </p>
                                 </div>
-<pre class="prettyprint prettyprinted stylesheet-head">
+                              <pre class="prettyprint prettyprinted stylesheet-head">
    .people {
         font-size: 12px;
         color: blue;
@@ -222,7 +217,6 @@
 </pre>
                             </section>
                             <a onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors');"> More selector Information found here </a>
-
                         </div>
                     </div>
                 </div>
@@ -252,8 +246,8 @@
                                     </div>
                                     <div class="content">
                                         <p class="desc">
-                                            Many things change the layout of a page. Everything from text alignment to the width of your containers. In the first section I'll review
-                                            how to change the layout of containers and the second half I'll explain how to change the layout of the things inside those containers.
+                                            Many things change the layout of a page. Everything from text alignment to the width of your containers. In the this section I'll review
+                                            how to change the layout of containers.
                                         </p>
                                     </div>
                                 </section>
@@ -263,15 +257,14 @@
                                     </div>
                                     <div class="content">
                                         <p class="desc">
-                                           When specifying the width and the height of a element you can use several different methods
+                                            When specifying the width and the height of a element you can use several different methods
                                         </p>
                                         <div class="header">
                                             <h2 class="title">px and %</h2>
-                                            </div>
-                                            <p class="desc">
-                                               The following example we have a div with the class main-container.
-                                            </p>
-
+                                        </div>
+                                        <p class="desc">
+                                            The following example we have a div with the class main-container.
+                                        </p>
 <pre class="prettyprint prettyprinted stylesheet-head">
      &lt;!DOCTYPE html>
       &lt;html>
@@ -283,52 +276,198 @@
 
         &lt;/body>
     &lt;/html>
-</pre>                                     <p class="desc">
-                                           We can add some style to adjust the layout
+</pre>
+                                        <p class="desc">
+                                            We can add some style to adjust the layout
                                         </p>
-<pre class="prettyprint prettyprinted stylesheet-head">
+ <pre class="prettyprint prettyprinted stylesheet-head">
     .main-container {
         width: 100%;
         height: 400px;
         background-color: grey;
     }
 </pre>
-                                            <p class="desc">
-                                               This would render into
-                                            </p>
-                                            <div class="div-layout-example"></div>
-                                                <p class="desc">
-                                                    What if we wanted to containers next to each other
-                                                </p>
+                                        <p class="desc">
+                                            This would render into
+                                        </p>
+                                        <div class="div-layout-example"></div>
 
-                                                <p class="desc">
-                                                     Add some style to adjust the layout
-                                                </p>
-<pre class="prettyprint prettyprinted stylesheet-head">
+                                        <p class="desc">
+                                           If we wanted to do the same thing with a fixed width of 200px this is what the code would look like
+                                        </p>
+   <pre class="prettyprint prettyprinted stylesheet-head">
+    .main-container {
+        width: 200px;
+        height: 400px;
+        background-color: grey;
+    }
+</pre>
+                                        <p class="desc">
+                                            This would render into
+                                        </p>
+                                        <div class="div-layout-example-200px"></div>
+                                    </div>
+                                    </section>
+
+                                <!--Two containers -->
+
+                                    <section>
+                                        <div class="header">
+                                            <h2 class="title">Two Containers</h2>
+                                        </div>
+                                        <div class="content">
+
+
+                                            <p class="desc">
+                                               Two containers would look like this
+                                            </p>
+ <pre class="prettyprint prettyprinted stylesheet-head">
+     &lt;!DOCTYPE html>
+      &lt;html>
+        &lt;head>
+             &lt;link rel="stylesheet" type="text/css" href="../css/people.css" />
+        &lt;/head>
+        &lt;body>
+            &lt;div class='main-container-1>  &lt;/div>
+            &lt;div class='main-container-2>  &lt;/div>
+
+        &lt;/body>
+    &lt;/html>
+</pre>
+
+                                            <p class="desc">
+                                                Add some styles
+                                            </p>
+   <pre class="prettyprint prettyprinted stylesheet-head">
     .main-container-1 {
-        width: 50%;
+        width: 200px;
         height: 400px;
         background-color: grey;
     }
     .main-container-2 {
-        width: 50%;
+        width: 200px;
         height: 400px;
         background-color: blue;
     }
 </pre>
-                                                <p class="desc">
-                                                    This would render into
-                                                </p>
-                                                <div class="div-layout-example-1">  </div>
-                                                <div class="div-layout-example-2"> </div>
+                                            <p class="desc">
+                                                This would render into
+                                            </p>
+                                            <div class="div-layout-example-1">  </div>
+                                            <div class="div-layout-example-2"> </div>
+                                            <p class="desc">
+                                                You might have expected those two containers to line up side by side, but they won't because they are both block level elements.
+                                                A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+                                                So even though we are setting the width to 50% on the
 
-
-                                                </div>
-                                            </div>
+                                            </p>
                                         </div>
+                                    </section>
+                                <section>
+                                    <div class="header">
+                                        <h2 class="title">Side by Side Container</h2>
+                                    </div>
+                                    <div class="content">
+                                        <p class="desc">
+                                            Two containers side by side would look like this
+                                        </p>
+ <pre class="prettyprint prettyprinted stylesheet-head">
+     &lt;!DOCTYPE html>
+      &lt;html>
+        &lt;head>
+             &lt;link rel="stylesheet" type="text/css" href="../css/people.css" />
+        &lt;/head>
+        &lt;body>
+            &lt;div class='main-container-1-left>  &lt;/div>
+            &lt;div class='main-container-2-right>  &lt;/div>
+
+        &lt;/body>
+    &lt;/html>
+</pre>
+
+                                        <p class="desc">
+                                            Add some styles
+                                        </p>
+   <pre class="prettyprint prettyprinted stylesheet-head">
+    .main-container-1-left {
+        width: 50%;
+        height: 400px;
+        background-color: grey;
+       display: inline-block;
+    }
+    .main-container-2-right {
+        width: 50%;
+        height: 400px;
+        background-color: blue;
+       display: inline-block;
+    }
+</pre>
+                                        <p class="desc">
+                                            This would render into
+                                        </p>
+                                        <div class="div-layout-example-1-left">  </div>
+                                        <div class="div-layout-example-2-right"> </div>
+                                        <p class="desc">
+                                           Now these containers will line up side by side because I put a display property of inline-block. Which means the element will
+                                            only take up as much room as needed, which allows for other elements to line up next to it.
+
+                                        </p>
                                     </div>
                                 </section>
+                                <section>
+                                    <div class="header">
+                                        <h2 class="title"> Display Property Breakdown </h2>
+                                    </div>
+                                    <div class="content">
+                                        <p class="desc">
+                                            <a class="bold-in-paragraph " onclick="window.open('http://www.w3schools.com/cssref/pr_class_display.asp');"> Detailed list of display properties  </a>
+
+                                        </p>
+
+                                        </div>
+                                    </section>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__container card__container--closed">
+                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <clipPath id="clipPath1">
+                                <!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+                                <circle class="clip" cx="960" cy="250" r="992"></circle>
+                            </clipPath>
+                        </defs>
+                        <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="../img/d.jpg"></image>
+                    </svg>
+                    <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                            <h2 class="card__title">Position</h2>
+                            <p class="card__subtitle">Relative? Static? Fixed? Absolute? What? </p>
+                        </div>
+                        <div class="card__copy">
+                            <section id="css3-intro-4">
+                                <div class="header">
+                                    <h2 class="title">Sometimes you just want things to stay put</h2>
+                                </div>
+                                <div class="content">
+                                    <p class="desc">
+                                        Here are the different positions you can give an element
+                                    </p>
+                                    <ul>
+                                        <li><p class="desc"><strong> relative :</strong> 	The element is positioned relative to its normal position </p></li>
+                                        <li><p class="desc"><strong> absolute :</strong> The element is positioned relative to its first positioned (not static) ancestor element </p></li>
+                                        <li><p class="desc"> <strong> static : </strong> Default value. Elements render in order, as they appear in the document flow</p></li>
+                                        <li><p class="desc"><strong> fixed : </strong> 	The element is positioned relative to the browser window </p></li>
+                                        <li><p class="desc"><strong> initial : </strong> Sets this property to its default value </p></li>
+                                        <li><p class="desc"><strong> inherit : </strong> Inherits this property from its parent element.</p></li>
+                                    </ul>
+                                    <a onclick="window.open('http://www.learnlayout.com/');"> Learn Css Layout</a>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -336,7 +475,6 @@
         </div>
     </div>
 </div>
-
 <script src="../js/vendors/trianglify.min.js"></script>
 <script src="../js/vendors/TweenMax.min.js"></script>
 <script src="../js/vendors/ScrollToPlugin.min.js"></script>
@@ -344,6 +482,5 @@
 <script src="../js/Card-circle.js"></script>
 <script src="../js/demo.js"></script>
 <script src="../js/itstime.js"></script>
-
 </body>
 </html>
